@@ -1,0 +1,49 @@
+//REPL:
+R-Read
+E-Eval
+P-print
+L-Loop
+
+//Create a file using nodejs through command
+type nul > file_name.js
+
+//to check dir
+dir
+
+
+//Read
+> a=5
+5
+> a
+5
+> a='Shruti'
+'Shruti'
+//Variables
+> var a="Praatik"
+undefined
+> aa
+Uncaught ReferenceError: aa is not defined
+> a
+'Praatik'
+
+//Loop
+> var x=0
+undefined
+> do
+... {
+... x++;
+... console.log(`X value is=${x}`);
+... }while(x<5);
+X value is=1
+X value is=2
+X value is=3
+X value is=4
+X value is=5
+undefined
+
+
+//Get Last element using (-):
+> 10
+10
+> _+5
+15
