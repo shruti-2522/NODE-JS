@@ -1,0 +1,75 @@
+
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <script>
+            function validate()
+            {
+                
+                var fname=document.getElementById("txtfname").value;
+                var lname=document.getElementById("txtlname").value;
+                var age=document.getElementById("txtage").value;
+                var reg=/^[a-z]+$/;
+                if(fname.match(reg))
+                {
+                    alert("First Name is validated");
+                }
+                else{
+                    alert("First name not validated");
+                }
+                if(lname.match(reg))
+                {
+                    alert("Last Name is validated");
+                }
+                else{
+                    alert("Last name not validated");
+                }
+                if(age>=18 && age<=50)
+                {
+                    alert("Within Age");
+                }
+                else{
+                    alert("Error in Age");
+                }
+                
+            }
+
+        </script>
+        <table class="table">
+            <tr>
+                <td>
+                    Enter First Name 
+                </td>
+                <td>
+                    <input type="text" id="txtfname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Last Name 
+                </td>
+                <td>
+                    <input type="text" id="txtlname" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Age 
+                </td>
+                <td>
+                    <input type="text" id="txtage" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" onclick="validate()" value="Validate">
+                </td>
+            </tr>
+
+        </table>
+    </body>
+</html>

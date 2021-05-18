@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <script>
+            function validate()
+            {
+                var email=document.getElementById("txtemail").value;
+                var reg=/^[a-z]+[0-9]*@[a-z]+[0-9]*\.[a-z]{2,3}$/;
+                if(email.match(reg))
+                {
+                    alert("Email Validated");
+                }
+                else{
+                    alert("Email Not Validated");
+                }
+            }
+        </script>
+        <table>
+            <tr>
+                <Td>
+                    Enter Email ID 
+                </Td>
+                <td>
+                    <input type="text" id="txtemail">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" onclick="validate()" value="Validate">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
